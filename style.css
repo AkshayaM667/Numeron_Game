@@ -38,7 +38,7 @@ body {
 }
 
 #logo {
-    width: 10%;
+    width: 20%;
     height: auto;
 }
 
@@ -94,7 +94,6 @@ body {
 #play-button {
     width: 5%; 
     height: auto;
-    margin-top: 300px;
     cursor: pointer;
     transition: transform 0.2s;
 }

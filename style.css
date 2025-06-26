@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(241, 195, 195);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-cover {
+    background: url("https://static.vecteezy.com/system/resources/previews/030/666/251/non_2x/different-shapes-pattern-in-the-style-of-vapor-wave-free-photo.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.game {
+    background: url("https://static.vecteezy.com/system/resources/previews/047/024/884/non_2x/pink-neon-frame-surrounding-peonies-in-a-garden-at-night-free-photo.jpeg") no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+}
+
+.play {
+    width: 180px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.number-holder {
+    background-color: rgb(253, 211, 211);
+    color: black;
+    width: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    height: 25vw;
+    border: 2px solid #EE2689;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+#instructions {
+    font-size: 6vw;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#buttons * {
+    width: 10%;
+    min-width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#buttons *:hover {
+    transform: scale(1.1);
+}
+
+#play-button {
+    width: 5%; 
+    height: auto;
+    margin-top: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#play-button:hover {
+    transform: scale(1.2);
+}
+
+#play-again-button {
+    width: 10%;
+    height: auto;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#play-again-button {
+    transform: scale(1.1);
+     width: 8%;
+    height: auto;
+    animation: popUp 1s ease-in-out infinite alternate;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+    border: 1px solid rgb(15, 4, 4);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+#game-over-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+#score-box {
+    font-size: 6vw;
+    border: 1px solid rgb(12, 11, 11);
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+#danger {
+    width: 8%;
+    height: auto;
+    animation: popUp 1s ease-in-out infinite alternate;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@keyframes popUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-10px) scale(1.2);
+        opacity: 1;
+    }
+}
